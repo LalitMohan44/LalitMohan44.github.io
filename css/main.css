@@ -1,0 +1,181 @@
+body {
+    background-color: rgb(227, 228, 232);
+}
+
+.top {
+    background-image: linear-gradient(to right, rgb(91, 92, 92), rgb(15, 15, 15));
+    width: 100%;
+    height: 250px;
+    text-align: right;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.top h1 {
+    color: rgb(206, 217, 223);
+    position: relative;
+    top: 20px;
+    right: 30px;
+    font-family: Arial;
+}
+
+.top img {
+    width: 250px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+}
+
+.left {
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: justify;
+}
+
+.rt {
+    background-color: whitesmoke;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgb(135, 140, 150);
+}
+
+.next {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nextl {
+    display: flex;
+    background-color: rgb(70, 96, 137);
+    margin-right: 10px;
+    width: 20%;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.nextd {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    float: left;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 60px;
+    float: left;
+}
+
+.par {
+    color: white;
+    position: relative;
+    left: 20px;
+    top: -5px;
+}
+
+.para {
+    color: white;
+    position: relative;
+    left: 20px;
+    top: -15px;
+}
+
+.paral {
+    color: #555;
+    font-size: 25px;
+    font-family: Arial;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+
+.bar {
+    position: relative;
+    left: 20px;
+    top: -30px;
+    height: 5px;
+    position: relative;
+    background: rgb(34, 34, 34);
+    border-radius: 25px;
+}
+
+.bar>span {
+    display: block;
+    height: 100%;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+}
+
+.line {
+    position: relative;
+    left: 50px;
+    height: 1px;
+}
+
+.line>span {
+    display: block;
+    height: 100%;
+    background-color: rgb(156, 157, 161);
+    position: relative;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(35, 51, 83);
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.social-icons li a {
+    border-bottom: none;
+}
+
+.social-icons li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.proj {
+    position: relative;
+    left: 50px;
+}
+
+.proj p {
+    font-family: Arial;
+    color: #555;
+}
+
+#pro {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#follow {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center;
+}
