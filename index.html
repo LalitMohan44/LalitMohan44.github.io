@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First Lesson</title>
+    <link rel="stylesheet" href="css\main.css">
+</head>
+
+<body>
+    <div class="top">
+        <img style="display: inline;" src="C:\Users\LalitMohan\Pictures\Saved Pictures\photo.jpg">
+        <h1 style="display: inline;">Lalit Mohan</h1>
+    </div>
+
+    <div class="next">
+        <div class="nextl">
+            <div class="left">
+                <img class="icon" src="C:\Users\LalitMohan\Pictures\Saved Pictures\phone.png">
+                <p class="par">+91 9790647369</p>
+            </div>
+            <div class="left">
+                <img class="icon" src="C:\Users\LalitMohan\Pictures\Saved Pictures\email.png">
+                <p class="par">lalit.mohan@enquero.com</p>
+            </div>
+            <div class="left">
+                <img class="icon" style="display: inline-block" src="C:\Users\LalitMohan\Pictures\Saved Pictures\skills.png">
+                <div id="pskill" style="display: inline-block">
+                    <p class="par" id="pro">Professional Skills</p>
+                    <p class="para"></p>
+                    <div class="bar">
+                        <span></span>
+                    </div>
+                    <p class="para"></p>
+                    <div class="bar">
+                        <span></span>
+                    </div>
+                    <p class="para"></p>
+                    <div class="bar">
+                        <span></span>
+                    </div>
+                    <p class="para"></p>
+                    <div class="bar">
+                        <span></span>
+                    </div>
+                    <p class="para"></p>
+                    <div class="bar">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="nextd ">
+            <div class="rt ">
+                <img class="logo" style="display: inline-block" src="C:\Users\LalitMohan\Pictures\Saved Pictures\work.png">
+                <div style="display: inline-block">
+                    <p class="paral"><b>Work Experience</b> </p>
+                </div>
+            </div>
+            <div class="rt ">
+                <img class="logo" style="display: inline-block" src="C:\Users\LalitMohan\Pictures\Saved Pictures\edu.png">
+                <div style="display: inline-block">
+                    <p class="paral"><b>Education</b> </p>
+                </div>
+            </div>
+            <div class="rt ">
+                <img class="logo" style="display: inline-block" src="C:\Users\LalitMohan\Pictures\Saved Pictures\project.png">
+                <div style="display: inline-block">
+                    <p class="paral"><b>My Projects</b> </p>
+                    <div class="proj">
+                        <p><b>Smart Plant System</b><br>The aim of the project was to monitor the health of the plants and water it accordingly using IOT.
+                        </p>
+                    </div>
+                    <div class="line">
+                        <span></span>
+                    </div>
+                    <div class="proj">
+                        <p><b>Online Cab booking System</b><br>I have made a website where admin can add new cabs, cab types and other things.
+                        </p>
+                    </div>
+                    <div class="line">
+                        <span></span>
+                    </div>
+                    <div class="proj">
+                        <p><b>Library Management System</b><br>Using MySql I have made the database for library.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <p id="follow">Follow me on</p>
+        <ul class="social-icons">
+            <li>
+                <a href="https://www.facebook.com/LalitandMohan" target="_blank"><img src='C:\Users\LalitMohan\Pictures\Saved Pictures\facebook.png' /></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/mLalit44" target="_blank"><img src='C:\Users\LalitMohan\Pictures\Saved Pictures\twitter.png' /></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lalit-mohan-10a800164/" target="_blank"><img src='C:\Users\LalitMohan\Pictures\Saved Pictures\link.png' /></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/m_lalit_m/" target="_blank"><img src='C:\Users\LalitMohan\Pictures\Saved Pictures\insta.png' /></a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        var mydata = [{
+            "skill": "C",
+            "value": "75%"
+        }, {
+            "skill": "C++",
+            "value": "60%"
+        }, {
+            "skill": "JAVA",
+            "value": "90%"
+        }, {
+            "skill": "SQL",
+            "value": "70%"
+        }, {
+            "skill": "Power BI",
+            "value": "30%"
+        }];
+        appendData(mydata);
+
+        function appendData(data) {
+            var a = document.querySelectorAll(".para");
+            var b = document.querySelectorAll(".bar>span");
+            for (var i = 0; i < b.length; i++) {
+                a[i].innerHTML = data[i].skill;
+                b[i].style.width = data[i].value;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
