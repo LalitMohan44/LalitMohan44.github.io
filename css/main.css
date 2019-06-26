@@ -130,7 +130,7 @@ body {
 
 .footer {
     width: 100%;
-    background-color: rgb(35, 51, 83);
+    background-color: rgb(33, 37, 46);
     color: white;
     text-align: center;
     position: relative;
@@ -168,6 +168,28 @@ body {
     color: #555;
 }
 
+.sho {
+    position: relative;
+}
+
+#reps {
+    color: rgb(61, 58, 77);
+    font-size: 25px;
+    font-family: Arial;
+    position: relative;
+    left: 50px;
+    top: -10px;
+}
+
+#date,
+#date2,
+#date3 {
+    color: rgb(64, 101, 204);
+    position: relative;
+    top: -12px;
+    font-size: 14px;
+}
+
 #pro {
     font-size: 18px;
     font-weight: bold;
@@ -178,4 +200,21 @@ body {
     font-weight: bold;
     font-family: Arial;
     text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid rgb(45, 38, 146);
+    border-right: 1px solid rgb(45, 38, 146)
+}
+
+tr {
+    background-color: rgb(227, 228, 232);
 }
