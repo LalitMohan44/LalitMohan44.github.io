@@ -93,7 +93,7 @@ body {
     font-size: 25px;
     font-family: Arial;
     position: relative;
-    left: 50px;
+    left: 30px;
     top: -10px;
 }
 
@@ -117,8 +117,9 @@ body {
 
 .line {
     position: relative;
-    left: 50px;
+    left: 15%;
     height: 1px;
+    width: 80%;
 }
 
 .line>span {
@@ -160,7 +161,15 @@ body {
 
 .proj {
     position: relative;
-    left: 50px;
+    left: 15%;
+    overflow: auto;
+    text-align: justify;
+}
+
+.con {
+    position: relative;
+    overflow-wrap: break-word;
+    width: 85%;
 }
 
 .proj p {
@@ -179,7 +188,8 @@ body {
 
 #date,
 #date2,
-#date3 {
+#date3,
+#date4 {
     color: rgb(64, 101, 204);
     position: relative;
     top: -12px;
@@ -199,6 +209,8 @@ body {
 }
 
 table {
+    position: relative;
+    left: 15%;
     border-collapse: collapse;
     width: 100%;
 }
@@ -206,7 +218,7 @@ table {
 th,
 td {
     text-align: left;
-    padding: 8px;
+    padding: 10px;
     border-bottom: 1px solid rgb(45, 38, 146);
     border-right: 1px solid rgb(45, 38, 146)
 }

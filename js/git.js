@@ -16,8 +16,6 @@ function repo(data) {
 
         var arrHead = new Array();
         arrHead = ['Name', 'Link', 'Discription'];
-        var repl = new Array();
-        repl = ["name", "url", "discription"];
 
         var repTable = document.createElement('TABLE');
         repTable.setAttribute('id', 'repTable');
@@ -32,16 +30,13 @@ function repo(data) {
         repTable.appendChild(tr);
         for (var i = 0; i < data.length; i++) {
             var tra = document.createElement('tr');
-            for (var j = 0; j < arrHead.length; j++) {
-                var td = document.createElement('td');
-                td.innerHTML = data[i].name;
-                tra.appendChild(td);
-            }
+            tra.innerHTML += `<td>${data[i]["name"]}</td><td><a href=${data[i]["html_url"]}>${data[i]["html_url"]}</a></td><td>${data[i]["description"]}</td></tr>`
             repTable.appendChild(tra);
         }
 
         var div = document.getElementById('cont');
         div.appendChild(repTable);
+
     }
 
 
