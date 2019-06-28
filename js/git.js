@@ -10,32 +10,35 @@ request.onload = function() {
 }
 
 function repo(data) {
+    var div = document.getElementById("cont");
     document.getElementById("reps").addEventListener("click", myFunction);
 
     function myFunction() {
+        if (div.innerHTML == "") {
+            var arrHead = new Array();
+            arrHead = ['Name', 'Link', 'Discription'];
 
-        var arrHead = new Array();
-        arrHead = ['Name', 'Link', 'Discription'];
+            var repTable = document.createElement('TABLE');
 
-        var repTable = document.createElement('TABLE');
+            var tr = document.createElement('tr');
 
-        var tr = document.createElement('tr');
+            for (var h = 0; h < arrHead.length; h++) {
+                var th = document.createElement('th');
+                th.innerHTML = arrHead[h];
+                tr.appendChild(th);
+            }
+            repTable.appendChild(tr);
+            for (var i = 0; i < data.length; i++) {
+                var tra = document.createElement('tr');
+                tra.innerHTML += `<td>${data[i]["name"]}</td><td><a href=${data[i]["html_url"]} target="_blank">${data[i]["html_url"]}</a></td><td>${data[i]["description"]}</td></tr>`
+                repTable.appendChild(tra);
+            }
 
-        for (var h = 0; h < arrHead.length; h++) {
-            var th = document.createElement('th');
-            th.innerHTML = arrHead[h];
-            tr.appendChild(th);
+            div.appendChild(repTable);
+
+        } else {
+            div.innerHTML = "";
         }
-        repTable.appendChild(tr);
-        for (var i = 0; i < data.length; i++) {
-            var tra = document.createElement('tr');
-            tra.innerHTML += `<td>${data[i]["name"]}</td><td><a href=${data[i]["html_url"]} target="_blank">${data[i]["html_url"]}</a></td><td>${data[i]["description"]}</td></tr>`
-            repTable.appendChild(tra);
-        }
-
-        var div = document.getElementById('cont');
-        div.appendChild(repTable);
-
     }
 
 
