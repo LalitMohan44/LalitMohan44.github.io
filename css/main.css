@@ -144,8 +144,10 @@ h3 {
 
 .footer {
     width: 100%;
-    background-color: rgb(33, 37, 46);
-    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(21, 22, 26);
+    color: rgb(206, 217, 223);
     text-align: center;
     position: relative;
     top: 20px;
@@ -200,7 +202,7 @@ h3 {
     margin-top: 3%;
     margin-left: 16%;
     display: inline-block;
-    text-align: justify;
+    text-align: left;
 }
 
 .sports img {
@@ -211,6 +213,14 @@ h3 {
 }
 
 .sports img:hover {
+    transform: scale(1.8);
+}
+
+.soc {
+    transition: transform .3s;
+}
+
+.soc:hover {
     transform: scale(1.8);
 }
 
